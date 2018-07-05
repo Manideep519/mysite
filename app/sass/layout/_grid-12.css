@@ -1,141 +1,43 @@
-*,
-*::before,
-*::after{
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
-}
-
-body{box-sizing: border-box;}
-
-html{
-	font-size: 62.5%;
-}
-
-.large-hero{
-	background-image: linear-gradient(rgba(0,0,0,.3),
-		                              rgba(0,0,0,.3) ),
-	                                  url(../img/hero-img.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-
-	height: 100vh;
-	width: 100vw;
-}
-
-.large-hero__description .heading-1 {
-			font-family: Montserrat, sans-serif;
-			font-weight: normal;
-			font-size: 	72px;
-			letter-spacing: 15px;
-			color: #FFF;
-		}
-
-.large-hero__description .heading-2 {
-			font-family: Roboto, sans-serif;
-			font-weight: normal;
-			font-size: 	36px;
-			letter-spacing: 5px;
-			color: #FFF;
-		}
-
-.header{
-	font-family: Lato, sans-serif;
-	font-weight: 300;
-	color: #FFF;
-
-	height: 100px;
-
-	display: flex;
-	align-items: center;
-}
-
-.header__logo{
-		font-size: 48px;
-	}
-
-.header__nav{
-		display: flex;
-		justify-content: flex-end;
-
-	}
-
-.header__nav ul{
-			list-style-type: none;
-			font-weight: normal;
-		}
-
-.header__nav ul li{
-				display: inline-block;
-			}
-
-.header__nav ul li:not(:last-child){
-					margin-right: 60px;
-				}
-
-.header__nav ul li a{
-					display: inline-block;
-					text-decoration: none;
-					color: #FFF;
-					font-size: 16px;
-				}
-
 /*============================================================================
 Grid Layout 12Col Starts!!!
 ============================================================================*/
-
-*:before,
+    *:before,
     *:after {
         box-sizing: inherit;
     }
 
-.grid {
+    .grid {
         max-width: 1200px;
         margin: 0 auto;
     }
-
-.grid:before,
+    .grid:before,
     .grid:after,
     .row:before,
     .row:after {
         content: " ";
         display: table;
     }
-
-.grid:after,
+    .grid:after,
     .row:after {clear: both;}
-
-[class*='col-']{
+    [class*='col-']{
         width: 100%;
         float: left;
     }
 
-.col-1 {width: 8.33333%;}
+    .col-1 {width: 8.33333%;}
+    .col-2 {width: 16.66667%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33333%;}
+    .col-5 {width: 41.66667%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33333%;}
+    .col-8 {width: 66.66667%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33333%;}
+    .col-11 {width: 91.66667%;}
+    .col-12 {width: 100%;}
 
-.col-2 {width: 16.66667%;}
-
-.col-3 {width: 25%;}
-
-.col-4 {width: 33.33333%;}
-
-.col-5 {width: 41.66667%;}
-
-.col-6 {width: 50%;}
-
-.col-7 {width: 58.33333%;}
-
-.col-8 {width: 66.66667%;}
-
-.col-9 {width: 75%;}
-
-.col-10 {width: 83.33333%;}
-
-.col-11 {width: 91.66667%;}
-
-.col-12 {width: 100%;}
-
-@media screen and (min-width:320px){
+    @media screen and (min-width:320px){
         .col-xs-1 {width: 8.33333%;}
         .col-xs-2 {width: 16.66667%;}
         .col-xs-3 {width: 25%;}
@@ -149,8 +51,7 @@ Grid Layout 12Col Starts!!!
         .col-xs-11 {width: 91.66667%;}
         .col-xs-12 {width: 100%;}
     }
-
-@media screen and (min-width:640px){
+    @media screen and (min-width:640px){
         .col-sm-1 {width: 8.33333%;}
         .col-sm-2 {width: 16.66667%;}
         .col-sm-3 {width: 25%;}
@@ -164,8 +65,7 @@ Grid Layout 12Col Starts!!!
         .col-sm-11 {width: 91.66667%;}
         .col-sm-12 {width: 100%;}
     }
-
-@media screen and (min-width:960px){
+    @media screen and (min-width:960px){
         .col-md-1 {width: 8.33333%;}
         .col-md-2 {width: 16.66667%;}
         .col-md-3 {width: 25%;}
@@ -180,7 +80,7 @@ Grid Layout 12Col Starts!!!
         .col-md-12 {width: 100%;}
     }
 
-@media screen and (min-width:1200px){
+    @media screen and (min-width:1200px){
         .col-wd-1 {width: 8.33333%;}
         .col-wd-2 {width: 16.66667%;}
         .col-wd-3 {width: 25%;}
@@ -195,6 +95,6 @@ Grid Layout 12Col Starts!!!
         .col-wd-12 {width: 100%;}
     }
 
-/*============================================================================
+    /*============================================================================
     Grid Layout 12Col Ends!!!
     ============================================================================*/

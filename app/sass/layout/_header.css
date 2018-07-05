@@ -1,0 +1,71 @@
+.large-hero{
+	background-image: linear-gradient(rgba(0,0,0,.3),
+		                              rgba(0,0,0,.3) ),
+	                                  url(../img/hero-img.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+
+	height: 100vh;
+	width: 100vw;
+
+	&__description{
+		.heading-1 {
+			font-family: Montserrat, sans-serif;
+			font-weight: normal;
+			font-size: 	72px;
+			letter-spacing: 15px;
+			color: #FFF;
+		}
+
+		.heading-2 {
+			font-family: Roboto, sans-serif;
+			font-weight: normal;
+			font-size: 	36px;
+			letter-spacing: 5px;
+			color: #FFF;
+		}
+
+	}
+}
+
+
+.header{
+	font-family: Lato, sans-serif;
+	font-weight: 300;
+	color: #FFF;
+
+	height: 100px;
+
+	display: flex;
+	align-items: center;
+
+	&__logo{
+		font-size: 48px;
+	}
+
+	&__nav{
+		display: flex;
+		justify-content: flex-end;
+		ul{
+			list-style-type: none;
+			font-weight: normal;
+
+			li{
+				display: inline-block;
+
+				&:not(:last-child){
+					margin-right: 60px;
+				}
+
+				a{
+					display: inline-block;
+					text-decoration: none;
+					color: #FFF;
+					font-size: 16px;
+				}
+			}
+		}
+
+	}
+}
