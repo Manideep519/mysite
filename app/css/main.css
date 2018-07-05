@@ -6,11 +6,33 @@
 	box-sizing: inherit;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 body{box-sizing: border-box;}
 
 html{
 	font-size: 62.5%;
 }
+
+.mg-bt-sm{ margin-bottom: 2rem; }
+
+.mg-bt-md{ margin-bottom: 4rem; }
+
+.mg-bt-lg{ margin-bottom: 6rem; }
+
+.mg-bt-hg{ margin-bottom: 8rem; }
+
+.mg-tp-sm{ margin-top: 2rem; }
+
+.mg-tp-md{ margin-top: 4rem; }
+
+.mg-tp-lg{ margin-top: 6rem; }
+
+.mg-tp-hg{ margin-top: 8rem; }
 
 .large-hero{
 	background-image: linear-gradient(rgba(0,0,0,.3),
@@ -22,21 +44,32 @@ html{
 
 	height: 100vh;
 	width: 100vw;
+
+	position: relative;
 }
 
-.large-hero__description .heading-1 {
+.large-hero__description{
+		position: absolute;
+		top: 45%;
+		left: 44%;
+		-webkit-transform: translate(-50%,-50%);
+		        transform: translate(-50%,-50%);
+
+	}
+
+.large-hero__description--heading-1 {
 			font-family: Montserrat, sans-serif;
 			font-weight: normal;
-			font-size: 	72px;
-			letter-spacing: 15px;
+			font-size: 	7.2rem;
+			letter-spacing: 2px;
 			color: #FFF;
 		}
 
-.large-hero__description .heading-2 {
+.large-hero__description--heading-2 {
 			font-family: Roboto, sans-serif;
 			font-weight: normal;
-			font-size: 	36px;
-			letter-spacing: 5px;
+			font-size: 	3.6rem;
+			letter-spacing: 1.5px;
 			color: #FFF;
 		}
 
@@ -45,19 +78,17 @@ html{
 	font-weight: 300;
 	color: #FFF;
 
-	height: 100px;
-
-	display: flex;
-	align-items: center;
+	height: 10rem;
+	margin-top: 2rem;
 }
 
 .header__logo{
-		font-size: 48px;
+		font-size: 4.8rem;
 	}
 
 .header__nav{
-		display: flex;
-		justify-content: flex-end;
+		margin-top: 2.5rem;
+		float: right;
 
 	}
 
@@ -71,15 +102,25 @@ html{
 			}
 
 .header__nav ul li:not(:last-child){
-					margin-right: 60px;
+					margin-right: 6rem;
 				}
 
 .header__nav ul li a{
 					display: inline-block;
 					text-decoration: none;
+					font-size: 1.6rem;
 					color: #FFF;
-					font-size: 16px;
+					border-bottom: 2px solid transparent;
+
+					padding-bottom: .5rem;
+
+					transition: border-bottom 50ms linear 0s;
 				}
+
+.header__nav ul li a:hover,
+					.header__nav ul li a:active{
+						border-bottom: 2px solid #FFF;
+					}
 
 /*============================================================================
 Grid Layout 12Col Starts!!!
