@@ -1,3 +1,43 @@
+/* MEDIA QUERY BREAK POINTS AND MIXINS(POSTCSS)*/
+
+$xs: 17.5em; /* 280px */
+$sm: 30em; /* 480px */
+$md: 56.25em; /* 900px */
+$lg: 75em; /* 1200px */
+$hg: 112.5em; /* 1800px */
+
+
+@define-mixin atXSmall{
+	@media only screen and (min-width: $xs{
+		@mixin-content;
+	}
+}
+@define-mixin atSmall{
+	@media only screen and (min-width: $sm){
+		@mixin-content;
+	}
+}
+
+@define-mixin atMedium{
+	@media only screen and (min-width: $md){
+		@mixin-content;
+	}
+}
+
+@define-mixin atLarge{
+	@media only screen and (min-width: $lg){
+		@mixin-content;
+	}
+}
+@define-mixin atLarge{
+	@media only screen and (min-width: $hg){
+		@mixin-content;
+	}
+}
+
+/*MEDIA QUERY ENDS*/
+
+
 *,
 *::before,
 *::after{
@@ -15,5 +55,9 @@
 body{box-sizing: border-box;}
 
 html{
-	font-size: 62.5%;
+	font-size: 50%;
+	
+	@mixin atSmall{
+		font-size: 62.5%;
+	}
 }
