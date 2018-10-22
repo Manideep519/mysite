@@ -1,9 +1,21 @@
+.mg-bt-xsm{ margin-bottom: 1rem; }
 .mg-bt-sm{ margin-bottom: 2rem; }
 .mg-bt-md{ margin-bottom: 4rem; }
 .mg-bt-lg{ margin-bottom: 6rem; }
 .mg-bt-hg{ margin-bottom: 8rem; }
 
+.mg-tp-xsm{ margin-top: 1rem; }
 .mg-tp-sm{ margin-top: 2rem; }
 .mg-tp-md{ margin-top: 4rem; }
 .mg-tp-lg{ margin-top: 6rem; }
 .mg-tp-hg{ margin-top: 8rem; }
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}

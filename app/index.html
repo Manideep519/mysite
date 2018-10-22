@@ -4,54 +4,56 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
-    <meta name="description" content="">
+    <meta name="author" content="Manideep M">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:300,400|Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch|Lato:300|Montserrat:400,700" rel="stylesheet">
     <!-- build:css css/styles.min.css -->
-        <link rel="stylesheet" href="css/main.css">
-        <!-- endbuild -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
 </head>
 <body>
-
-<!--large-hero Section Starts here -->
-    <div class="large-hero" id="home">
+    <header class="header">
         <div class="grid">
             <div class="row">
                 <div class="col-12">
-                    <header class="header clearfix">
-                        <div class="header__logo">
-                            <span>MD</span>
+                    <div class="nav-bar">
+                        <div class="nav-bar__logo">
+                            <span class="noselect">MD</span>
                         </div>
-                        <div class="navi">
-                            <input type="checkbox" class="navi__checkbox" id="navi-toggle">
-                            <label class="navi__button" for="navi-toggle">
-                                <span class="navi__icon"></span>
-                            </label>
-                            <div class="navi__bg"></div>
-                            <nav class="navi__nav">
-                                <ul class="navi__list">
-                                    <li class="navi__item"><a class="navi__link" href="#home">Home</a></li>
-                                    <li class="navi__item"><a class="navi__link" href="#">About</a></li>
-                                    <li class="navi__item"><a class="navi__link" href="#">Portfolio</a></li>
-                                    <li class="navi__item"><a class="navi__link" href="#">Contact</a></li>
-                                </ul>
-                            </nav>
+                        <div class="nav-bar__menu-bar noselect">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Work</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                            <div class="nav-bar__icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </div>
-                    </header>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="header__intro-text noselect">
+                        <h5 class="heading header__intro-text-hello mg-bt-xsm">HELLO, WORLD.</h5>
+                        <h1 class="heading header__intro-text-name">I'm Manideep.</h1>
+                        <h2 class="heading header__intro-text-skill mg-tp-xsm">FRONT-END DEVELOPER</h2>
+                    </div>
                 </div>
             </div>
-            <div class="large-hero__description">
-                <h1 class="large-hero__description--heading-1">
-                    Hello,<br/>I'm Manideep.
-                </h1>
-                <h2 class="large-hero__description--heading-2 mg-tp-sm">
-                    Frontend Developer
-                </h2>
-            </div>
-        </div>
-    </div>
- <!--large-hero Section Ends here -->
-
-
+      </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.nav-bar__icon').click(function(){
+            $('.nav-bar__icon').toggleClass('active');
+            $('.nav-bar__menu-bar').toggleClass('active');
+          })
+        })
+    </script>
 </body>
 </html>

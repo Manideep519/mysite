@@ -1,0 +1,35 @@
+.heading{
+	margin: 0;
+}
+
+.header{
+
+	&__intro-text{
+
+		&-hello{
+			font-family: 'Montserrat', sans-serif;
+			font-size: 3.6rem;
+			font-weight: 400;
+			text-transform: uppercase;
+			color: $black;
+		}
+
+		&-name{
+			font-family: 'Montserrat', sans-serif;
+			font-size: 5.2rem;
+			font-weight: 700;
+			color: $black;
+
+			@media (min-width: 640px){
+				font-size: 8.2rem;
+			}
+		}
+
+		&-skill{
+			font-family: 'Chakra Petch', sans-serif;
+			font-size: 2.4rem;
+			font-weight: normal;
+			color: $black;
+		}
+	}
+}
