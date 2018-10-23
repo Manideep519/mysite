@@ -37,6 +37,12 @@ font-family: 'Chakra Petch', sans-serif;
 /*particles js Styles*/
  .ps-wrapper{
  	position: relative;
+ 	background-image: linear-gradient(to top, rgba(#fff,.3), rgba(#fff,.3)),url("../img/land-bg-7.jpg");
+ 	background-attachment: fixed;
+ 	background-position: bottom center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	height: 100vh;
  }
  #particles-js canvas{
     position: absolute;
@@ -66,6 +72,7 @@ body{box-sizing: border-box;}
 
 html{
 	font-size: 50%;
+	scroll-behavior: smooth;
 	
 	@media (min-width: 480px){
 		font-size: 62.5%;
