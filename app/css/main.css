@@ -10,6 +10,19 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Chakra Petch', sans-serif;
 
  */
+/*particles js Styles*/
+.ps-wrapper{
+ 	position: relative;
+ }
+#particles-js canvas{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+ }
+/*particles js Styles*/
 *,
 *::before,
 *::after{
@@ -96,7 +109,14 @@ html{
 	display: flex;
 	align-items: center;
 	height: 10rem;
+	position: static;
 }
+@media (min-width: 900px){
+.nav-bar{
+		position: relative;
+		z-index: 2
+}
+	}
 .nav-bar__logo{
 		margin-right: auto;
 		font-family: 'Lato', sans-serif;
@@ -106,6 +126,10 @@ html{
 		padding: .5rem .5rem;
 		border: 1.5px solid #333;
 	}
+.nav-bar__logo a{
+			text-decoration: none;
+			color: inherit;
+		}
 .nav-bar__menu-bar.active ul{
 			opacity: 1;
 			visibility: visible;
@@ -124,11 +148,18 @@ html{
 			position: absolute;
 			top: 0;
 			left: 0;
-			z-index: 99;
+			z-index: 10;
 			text-align: center;
 			transition: all .4s;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 		}
-.nav-bar__menu-bar li{ display: block; }
+.nav-bar__menu-bar li{
+			display: block;
+			align-self: stretch;
+		}
 .nav-bar__menu-bar a{
 			display: block;
 			text-decoration: none;
@@ -159,9 +190,10 @@ html{
 					width: auto;
 					height: auto;
 					position: static;
-					z-index: 99;
+					z-index: 10;
 					text-align: left;
 					transition: all .3s;
+					display: block;
 				}
 
 				.nav-bar__menu-bar li{
@@ -201,7 +233,7 @@ html{
 		background-color: #fff;
 		color: #333;
 		position: fixed;
-		z-index: 100;
+		z-index: 11;
 		position: relative;
 	}
 .nav-bar__icon.active span:nth-child(1){

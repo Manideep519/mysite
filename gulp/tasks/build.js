@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 useref = require('gulp-useref'),
 gulpIf = require('gulp-if'),
+uglify = require('gulp-uglify'),
 imageMin = require('gulp-imagemin'),
 cssNano = require('gulp-cssnano'),
 cache = require('gulp-cache'),
@@ -13,6 +14,7 @@ gulp.task('useref', function(){
 	console.log("running useref");
 	return gulp.src('app/*.html')
 	.pipe(useref())
+	.pipe(gulpIf('*.js', uglify()))
 	.pipe(gulpIf('*.css', cssNano()))
 	.pipe(gulp.dest('docs'))
 });
