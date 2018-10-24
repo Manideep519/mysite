@@ -15,7 +15,6 @@
 		}
 
 		& > div{
-			padding: 1rem;
 			text-align: center;
 		}
 
@@ -25,10 +24,10 @@
 			
 			& > div:not(:last-child){
 				margin-right: 10rem;
+				text-align: left;
 			}
 
 			& > div{
-				padding: 0;
 				text-align: left;
 			}
 

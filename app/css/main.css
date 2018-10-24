@@ -1,8 +1,4 @@
 /*Color-Variables*/
-/*body{
-	background-color: #000;
-}
-*/
 /*Fonts used
 
 font-family: 'Lato', sans-serif;
@@ -36,6 +32,12 @@ font-family: 'Chakra Petch', sans-serif;
 	margin: 0;
 	padding: 0;
 	box-sizing: inherit;
+}
+.fix-link{
+	display: block;
+	height: 6rem;
+	margin-top: -6rem;
+	visibility: hidden;
 }
 .clearfix::after {
     content: "";
@@ -150,7 +152,6 @@ html{
 			margin-right: 0rem;
 		}
 .about__wrapper > div{
-			padding: 1rem;
 			text-align: center;
 		}
 @media (min-width: 1000px){
@@ -160,10 +161,10 @@ html{
 			
 			.about__wrapper > div:not(:last-child){
 				margin-right: 10rem;
+				text-align: left;
 			}
 
 			.about__wrapper > div{
-				padding: 0;
 				text-align: left;
 			}
 
@@ -292,7 +293,7 @@ html{
 			color: #fff;
 			font-family: 'Lato', sans-serif;
 			font-size: 1.6rem;
-			font-weight: 700;
+			font-weight: 400;
 			text-transform: uppercase;
 			padding: 4rem 2rem;
 			transition: all .2s;
@@ -338,7 +339,7 @@ html{
 					color: #333;
 					font-family: 'Lato', sans-serif;
 					font-size: 1.6rem;
-					font-weight: 700;
+					font-weight: 400;
 					text-transform: uppercase;
 					padding: 2rem;
 					border-bottom: 1px solid transparent;
