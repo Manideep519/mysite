@@ -37,9 +37,10 @@ font-family: 'Chakra Petch', sans-serif;
 /*particles js Styles*/
  .ps-wrapper{
  	position: relative;
- 	background-image: linear-gradient(to top, rgba(#fff,.3), rgba(#fff,.3)),url("../img/land-bg-7.jpg");
+ 	/*background-image: linear-gradient(to top, rgba(#000,.3), rgba(#000,.3)),url("../img/land-bg-0.jpg");*/
+ 	background-color: $white;
  	background-attachment: fixed;
- 	background-position: bottom center;
+ 	background-position: center center;
  	background-repeat: no-repeat;
  	background-size: cover;
  	height: 100vh;
