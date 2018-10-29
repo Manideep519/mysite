@@ -9,6 +9,18 @@
 	background-color: $dark-grey;
 	padding: 0 2rem;
 	height: 6rem;
+	animation: slide-down .4s;
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
 }
 
 .nav-bar__logo.fixed-nav{
@@ -41,6 +53,7 @@
 .nav-bar{
 	height: 10rem;
 	width: 100%;
+	padding: 0 2rem;
 	position: static;
 	left: 0;
 	top: 0;	

@@ -9,6 +9,7 @@ Grid Layout 12Col Starts!!!
     .grid {
         max-width: 1200px;
         margin: 0 auto;
+        padding: 0 2rem;
     }
     .grid:before,
     .grid:after,

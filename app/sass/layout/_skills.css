@@ -1,0 +1,38 @@
+.skills{
+	background-color: #fff;
+	padding: 8rem 0;
+
+	&__skill-box{
+		padding: 1rem;
+		width: 100%;
+
+		@media (min-width: 960px){
+			width: 90%;
+		}
+
+		& p{
+			text-transform: uppercase;
+			font-family: 'Lato', sans-serif;
+			font-size: 1.6rem;
+			margin-bottom: .6rem;
+		}
+
+		& p:nth-child(2){
+			float: right;
+			position: relative;
+			top: -2.2222rem;
+		}
+
+		&__skill{
+			background-color: #fff;
+			border: 1px solid #333;
+			border-radius: 2rem;
+		}
+
+		&__level{
+			background-color: #333;
+			height: .6rem;
+			width: 100%;
+		}
+	}
+}
