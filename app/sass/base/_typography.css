@@ -12,6 +12,10 @@
 	font-family: 'Lato', sans-serif;
 	font-size: 4rem;
 	font-weight: 500;
+
+	&--white{
+		color: #fff !important;
+	}
 }
 
 .header{
@@ -47,7 +51,7 @@
 }
 
 .about{
-	color: $black;
+	color: $white;
 
 	&__intro{
 		
@@ -83,7 +87,7 @@
 			letter-spacing: 2.4px;
 
 			.hilight{
-				color:#2f3640;
+				color:#ddd;
 			}
 		}
 	}
